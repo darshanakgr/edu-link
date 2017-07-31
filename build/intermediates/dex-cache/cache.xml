@@ -2,157 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\4d9c7ed920be98ecd08f1464f4e522577eee78cc\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="E:\android-projects\edu-link\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
-        revision="26.0.0"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_7ef20d65e48dc05933adf0d63dca441b97c1e52f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\9cfd5f847427119a626530493e9c7014fef790f7\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_46adafae27752272ab487f55d4b739b51f9f4af0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\97f9de3d96ba3839f29ab5df8b634a5df52a1e4b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_928a9292d0e69ab17ac804feae7be2d9239fcb91.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\44cee7b5c47dc6981bc172ab0d14e10fca5f252a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_e2f9d019899993f449055dd091847883009b277a.jar" />
+        revision="26.0.1"
+        sha1="e8b8ea3a9ddf070d4596ed8ec79f2dcb247c83d6">
+        <dex dex="E:\android-projects\edu-link\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_90f064b67d8f3abdacd8916649bc7a30d3ccdaf5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\android-projects\EduLink\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="E:\android-projects\edu-link\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="26.0.0"
-        sha1="d983010ff6092c8724e8fa9c0caa9f603a15b10f">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_89572dc594a571c5f6dc2f5ba8f49edf73e05bd5\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\c2b910aa049096860e32e00b83e063f7a85025c4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_c49689080fb376a3cf655712fde724ead1bef0c4.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\android-projects\EduLink\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
+        revision="26.0.1"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_350ab16b5822a3b7d7664a17f4738a037bac8319\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\78076b0b94d208c51b3ec9a88e903ebb0bc15549\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_1288697062cdec6bbb32749b326e61cab126c2d4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_b41ddb3156bc0377e9b1ec9b90204ef2fc74b197.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_d1b06cfc2a6802d597de11d3ad2104a6a3b53c13.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\3079496516f69d0f950587b0fb60b55c717be70c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_62335aa21d2dbbff8ef0fb144d891e2a4df6e751.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\74e2fcb730688a767fccdb9e23e15feaa0d84e0a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_de9daaa63802c64a519986c79c082da807498b1b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\65df90823113c7da448bf2d659d9f4582d86aa1c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_7cabea37e3274e5d6cba3a5702468c34615fdab3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\880ac561bc9c6151001d5e9b542303b2a9bee253\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_d4178cda6845e907a4fa6695be18bc553314d963.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\e4471445c60bb924cd16052c85b86611051efdde\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_b3036f77f84300c9ad36dd06f173bb293d4660a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\1e00e92fa54051541682d2a4291e968d69da8d6d\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_bc63d84881415897dd93447dcec7a40d4866b3c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\drox2014\.android\build-cache\f46c24b9099b4b20909dbcf61887906fe619484f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\android-projects\EduLink\app\build\intermediates\pre-dexed\debug\classes_1a9e614f2b3166f0e4e870ce93049becaf1cb7e6.jar" />
+        <dex dex="E:\android-projects\edu-link\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8e855204eeac9b013cba23c9571c6612b6545e94\classes.dex" />
     </item>
 
 </items>
