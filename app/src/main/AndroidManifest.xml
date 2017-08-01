@@ -22,7 +22,7 @@
         <activity android:name=".SubjectActivity" />
         <activity android:name=".LessonActivity" />
         <activity android:name=".lesson.SubjectContentActivity" />
-        <activity android:name=".lesson.LessonViewerActivity"></activity>
+        <activity android:name=".lesson.LessonViewerActivity" android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>

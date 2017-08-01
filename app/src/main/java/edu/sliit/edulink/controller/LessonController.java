@@ -16,7 +16,6 @@ public class LessonController {
     private static String TAG = "LessonController";
 
     public static Drawable[] getLessons(int grade, String subject, int lesson, AssetManager assetManager) throws IOException {
-        Log.d(TAG, subject + grade + lesson);
         switch (grade){
             case 1:
                 if(subject.equals("ENG")){

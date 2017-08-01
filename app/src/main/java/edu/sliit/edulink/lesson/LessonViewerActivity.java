@@ -31,7 +31,6 @@ public class LessonViewerActivity extends AppCompatActivity {
 
         try {
             Drawable[] lessons = LessonController.getLessons(grade, subject, lesson, getResources().getAssets());
-            Log.d("LESVIEW", "onCreate: "+ lessons);
             setActions(lessons);
         } catch (IOException e) {
             e.printStackTrace();
