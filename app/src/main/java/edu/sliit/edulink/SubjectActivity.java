@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import edu.sliit.edulink.lesson.gradethree.english.activity.GradeThreeEngLessonActivity;
+import edu.sliit.edulink.lesson.SubjectContentActivity;
 
 public class SubjectActivity extends AppCompatActivity {
 
@@ -26,28 +26,17 @@ public class SubjectActivity extends AppCompatActivity {
         englishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (grade){
-                    case 1:
-                        Toast.makeText(getApplicationContext(), "Under Development", Toast.LENGTH_LONG).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getApplicationContext(), "Under Development", Toast.LENGTH_LONG).show();
-                        break;
-                    case 3:
-                        Intent intent = new Intent(SubjectActivity.this, GradeThreeEngLessonActivity.class);
-                        startActivity(intent);
-                        break;
-                    case 4:
-                        Toast.makeText(getApplicationContext(), "Under Development", Toast.LENGTH_LONG).show();
-                        break;
-                }
+                Intent intent = new Intent(SubjectActivity.this, SubjectContentActivity.class);
+                intent.putExtra("Grade", grade);
+                intent.putExtra("Subject", "ENG");
+                startActivity(intent);
             }
         });
 
         dictionaryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubjectActivity.this, LessonActivity.class);
+                Intent intent = new Intent(SubjectActivity.this, SubjectContentActivity.class);
                 intent.putExtra("Grade", grade);
                 intent.putExtra("Subject", "DICT");
                 startActivity(intent);
@@ -57,7 +46,7 @@ public class SubjectActivity extends AppCompatActivity {
         mathematicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubjectActivity.this, LessonActivity.class);
+                Intent intent = new Intent(SubjectActivity.this, SubjectContentActivity.class);
                 intent.putExtra("Grade", grade);
                 intent.putExtra("Subject", "MATH");
                 startActivity(intent);
