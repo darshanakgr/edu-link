@@ -95,7 +95,7 @@ public class LessonController {
                         case 2:
                             return getGradeThreeEngLesTwoImages(assetManager);
                         case 3:
-                            return null;
+                            return getGradeThreeEngLesThreeImages(assetManager);
                         default:
                             return null;
                     }
@@ -175,6 +175,15 @@ public class LessonController {
         Drawable[] arr = new Drawable[5];
         for (int i = 0; i < 5; i++) {
             InputStream stream = assetManager.open("gr-3-eng-les-2-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream, null);
+        }
+        return arr;
+    }
+
+    private static Drawable[] getGradeThreeEngLesThreeImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[10];
+        for (int i = 0; i < 10; i++) {
+            InputStream stream = assetManager.open("gr-3-eng-les-3-" + (i + 1)+ "-min.png");
             arr[i] = Drawable.createFromStream(stream, null);
         }
         return arr;

@@ -19,6 +19,7 @@ public class SubjectContentActivity extends AppCompatActivity {
 
         Button lessonOneBtn = (Button) findViewById(R.id.lesson_1_btn);
         Button lessonTwoBtn = (Button) findViewById(R.id.lesson_2_btn);
+        Button lessonThreeBtn = (Button) findViewById(R.id.lesson_3_btn);
         lessonOneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +38,17 @@ public class SubjectContentActivity extends AppCompatActivity {
                 intent.putExtra("Grade", getIntent().getIntExtra("Grade", -1));
                 intent.putExtra("Subject", getIntent().getStringExtra("Subject"));
                 intent.putExtra("Lesson", 2);
+                startActivity(intent);
+            }
+        });
+
+        lessonThreeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SubjectContentActivity.this, LessonViewerActivity.class);
+                intent.putExtra("Grade", getIntent().getIntExtra("Grade", -1));
+                intent.putExtra("Subject", getIntent().getStringExtra("Subject"));
+                intent.putExtra("Lesson", 3);
                 startActivity(intent);
             }
         });
