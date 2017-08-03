@@ -25,7 +25,7 @@
         <activity
             android:name=".lesson.LessonViewerActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".tutoral.gradethree.english.activity.GradeThreeEngTutorialOne"></activity>
+        <activity android:name=".tutoral.TutorialViewerActivity"></activity>
     </application>
 
 </manifest>

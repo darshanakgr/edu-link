@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="71a619e0eeb2134288b80113bce593e47f57eb08">
+        sha1="36a1ef49cc5e620b14a192f6fb93d63f54d65c4c">
         <dex dex="D:\Projects\android-projects\EduLink\edu-link\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6ef0509d787693b193b9136b60f84e2f5582a8e2\classes.dex" />
     </item>
     <item
