@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import edu.sliit.edulink.R;
+import edu.sliit.edulink.controller.SubjectContentActivityController;
 import edu.sliit.edulink.tutoral.TutorialViewerActivity;
 
 public class SubjectContentActivity extends AppCompatActivity {
@@ -24,6 +25,17 @@ public class SubjectContentActivity extends AppCompatActivity {
         Button tutorialOneBtn = (Button) findViewById(R.id.tutorial_1_btn);
         Button tutorialTwoBtn = (Button) findViewById(R.id.tutorial_2_btn);
         Button tutorialThreeBtn = (Button) findViewById(R.id.tutorial_3_btn);
+
+        boolean[] lesssonVisibility = SubjectContentActivityController.getLessonsCount(getIntent().getIntExtra("Grade", -1), getIntent().getStringExtra("Subject"));
+        boolean[] tutorialVisibility = SubjectContentActivityController.getTutorialCount(getIntent().getIntExtra("Grade", -1), getIntent().getStringExtra("Subject"));
+
+        lessonOneBtn.setVisibility(lesssonVisibility[0] ? View.VISIBLE : View.INVISIBLE);
+        lessonTwoBtn.setVisibility(lesssonVisibility[1] ? View.VISIBLE : View.INVISIBLE);
+        lessonThreeBtn.setVisibility(lesssonVisibility[2] ? View.VISIBLE : View.INVISIBLE);
+        tutorialOneBtn.setVisibility(tutorialVisibility[0] ? View.VISIBLE : View.INVISIBLE);
+        tutorialTwoBtn.setVisibility(tutorialVisibility[1] ? View.VISIBLE : View.INVISIBLE);
+        tutorialThreeBtn.setVisibility(tutorialVisibility[2] ? View.VISIBLE : View.INVISIBLE);
+
         lessonOneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
