@@ -21,7 +21,7 @@ public class LessonController {
                 if(subject.equals("ENG")){
                     switch (lesson){
                         case 1:
-                            return null;
+                            return getGradeOneEngLesImages(assetManager);
                         case 2:
                             return null;
                         case 3:
@@ -161,6 +161,16 @@ public class LessonController {
                 return null;
         }
     }
+
+    private static Drawable[] getGradeOneEngLesImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[26];
+        for (int i =0; i<26; i++){
+            InputStream stream = assetManager.open("gr-1-eng-les-" + (i + 1)+ "-min-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
+    }
+
 
     private static Drawable[] getGradeThreeEngLesOneImages(AssetManager assetManager) throws IOException {
         Drawable[] arr = new Drawable[4];
