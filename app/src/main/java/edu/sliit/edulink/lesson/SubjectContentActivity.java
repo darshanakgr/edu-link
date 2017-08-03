@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import edu.sliit.edulink.R;
+import edu.sliit.edulink.controller.TutorialController;
 
 public class SubjectContentActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class SubjectContentActivity extends AppCompatActivity {
         Button lessonOneBtn = (Button) findViewById(R.id.lesson_1_btn);
         Button lessonTwoBtn = (Button) findViewById(R.id.lesson_2_btn);
         Button lessonThreeBtn = (Button) findViewById(R.id.lesson_3_btn);
+        Button tutorialOneBtn = (Button) findViewById(R.id.tutorial_1_btn);
         lessonOneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +52,14 @@ public class SubjectContentActivity extends AppCompatActivity {
                 intent.putExtra("Subject", getIntent().getStringExtra("Subject"));
                 intent.putExtra("Lesson", 3);
                 startActivity(intent);
+            }
+        });
+
+        tutorialOneBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tutorial = TutorialController.getTutorial(getIntent().getIntExtra("Grade", -1), getIntent().getStringExtra("Subject"), 1, SubjectContentActivity.this);
+                startActivity(tutorial);
             }
         });
     }

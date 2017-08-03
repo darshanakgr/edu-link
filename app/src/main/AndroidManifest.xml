@@ -22,7 +22,10 @@
         <activity android:name=".SubjectActivity" />
         <activity android:name=".LessonActivity" />
         <activity android:name=".lesson.SubjectContentActivity" />
-        <activity android:name=".lesson.LessonViewerActivity" android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".lesson.LessonViewerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".tutoral.gradethree.english.activity.GradeThreeEngTutorialOne"></activity>
     </application>
 
 </manifest>
