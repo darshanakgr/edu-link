@@ -36,7 +36,7 @@ public class LessonController {
                         case 2:
                             return getGradeOneMatLesTwoImages(assetManager);
                         case 3:
-                            return null;
+                            return getGradeOneMatLesThreeImages(assetManager);
                         default:
                             return null;
                     }
@@ -160,6 +160,15 @@ public class LessonController {
             default:
                 return null;
         }
+    }
+
+    private static Drawable[] getGradeOneMatLesThreeImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[5];
+        for (int i =0; i<5; i++){
+            InputStream stream = assetManager.open("gr-1-mat-les-1-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
     }
 
     private static Drawable[] getGradeOneMatLesTwoImages(AssetManager assetManager) throws IOException {
