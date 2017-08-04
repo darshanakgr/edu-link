@@ -1,10 +1,5 @@
 package edu.sliit.edulink.controller;
 
-import android.content.res.AssetManager;
-import android.graphics.drawable.Drawable;
-
-import java.io.IOException;
-
 /**
  * Created by drox2014 on 8/3/2017.
  */
@@ -16,7 +11,7 @@ public class SubjectContentActivityController {
                 if(subject.equals("ENG")){
                     return new boolean[]{true,false,false};
                 }else if(subject.equals("MATH")){
-                    return new boolean[]{false,false,false};
+                    return new boolean[]{true,true,true};
                 }else{
                     return new boolean[]{false,false,false};
                 }
