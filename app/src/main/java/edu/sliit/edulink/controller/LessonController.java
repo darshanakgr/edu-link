@@ -32,9 +32,9 @@ public class LessonController {
                 }else if(subject.equals("MATH")){
                     switch (lesson){
                         case 1:
-                            return null;
+                            return getGradeOneMatLesOneImages(assetManager);
                         case 2:
-                            return null;
+                            return getGradeOneMatLesTwoImages(assetManager);
                         case 3:
                             return null;
                         default:
@@ -160,6 +160,23 @@ public class LessonController {
             default:
                 return null;
         }
+    }
+
+    private static Drawable[] getGradeOneMatLesTwoImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[5];
+        for (int i =0; i<5; i++){
+            InputStream stream = assetManager.open("gr-1-mat-les-1-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
+    }
+    private static Drawable[] getGradeOneMatLesOneImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[9];
+        for (int i =0; i<9; i++){
+            InputStream stream = assetManager.open("gr-1-mat-les-2-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
     }
 
     private static Drawable[] getGradeOneEngLesImages(AssetManager assetManager) throws IOException {
