@@ -21,9 +21,9 @@ public class LessonController {
                 if(subject.equals("ENG")){
                     switch (lesson){
                         case 1:
-                            return getGradeOneEngLesImages(assetManager);
+                            return getGradeOneEngLesOneImages(assetManager);
                         case 2:
-                            return null;
+                            return getGradeOneEngLesTwoImages(assetManager);
                         case 3:
                             return null;
                         default:
@@ -195,10 +195,19 @@ public class LessonController {
         return arr;
     }
 
-    private static Drawable[] getGradeOneEngLesImages(AssetManager assetManager) throws IOException {
+    private static Drawable[] getGradeOneEngLesOneImages(AssetManager assetManager) throws IOException {
         Drawable[] arr = new Drawable[26];
         for (int i =0; i<26; i++){
-            InputStream stream = assetManager.open("gr-1-eng-les-" + (i + 1)+ "-min-min.png");
+            InputStream stream = assetManager.open("gr-1-eng-les-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
+    }
+
+    private static Drawable[] getGradeOneEngLesTwoImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[10];
+        for (int i =0; i<10; i++){
+            InputStream stream = assetManager.open("gr-1-eng-les-2-" + (i + 1)+ "-min.png");
             arr[i] = Drawable.createFromStream(stream,null);
         }
         return arr;
