@@ -98,7 +98,7 @@ public class TutorialImageController {
                 }else if(subject.equals("MATH")){
                     switch (tutorial){
                         case 1:
-                            return null;
+                            return getGradeThreeMatTutOneImages(assetManager);
                         case 2:
                             return null;
                         case 3:
@@ -210,4 +210,13 @@ public class TutorialImageController {
         }
         return arr;
     }
+    private static Drawable[] getGradeThreeMatTutOneImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[5];
+        for (int i = 0; i < 5; i++) {
+            InputStream stream = assetManager.open("gr-3-mat-tut-1-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream, null);
+        }
+        return arr;
+    }
+
 }

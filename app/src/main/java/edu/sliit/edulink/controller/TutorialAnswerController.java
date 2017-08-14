@@ -185,7 +185,23 @@ public class TutorialAnswerController {
                 } else if (subject.equals("MATH")) {
                     switch (tutorial) {
                         case 1:
-                            return null;
+                            return new String[][]{
+                                    {
+                                            "3", "12", "20", "2"
+                                    },
+                                    {
+                                            "15", "14", "31", "13"
+                                    },
+                                    {
+                                            "14", "23", "25", "24"
+                                    },
+                                    {
+                                            "57", "62", "43", "56"
+                                    },
+                                    {
+                                            "79", "62", "87", "78"
+                                    }
+                            };
                         case 2:
                             return null;
                         case 3:
