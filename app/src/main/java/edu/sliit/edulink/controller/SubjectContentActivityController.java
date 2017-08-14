@@ -66,7 +66,7 @@ public class SubjectContentActivityController {
                 if(subject.equals("ENG")){
                     return new boolean[]{true,true,false};
                 }else if(subject.equals("MATH")){
-                    return new boolean[]{false,false,false};
+                    return new boolean[]{true,false,false};
                 }else{
                     return new boolean[]{false,false,false};
                 }
