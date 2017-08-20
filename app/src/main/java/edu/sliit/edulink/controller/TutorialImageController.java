@@ -17,7 +17,7 @@ public class TutorialImageController {
                 if(subject.equals("ENG")){
                     switch (tutorial){
                         case 1:
-                            return null;
+                            return getGradeOneEngTutOneImages(assetManager);
                         case 2:
                             return getGradeOneEngTutTwoImages(assetManager);
                         case 3:
@@ -168,6 +168,15 @@ public class TutorialImageController {
     }
 
     private static Drawable[] getGradeOneEngTutTwoImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[5];
+        for (int i = 0; i < 5; i++) {
+            InputStream stream = assetManager.open("gr-1-eng-tut-2-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream, null);
+        }
+        return arr;
+    }
+
+    private static Drawable[] getGradeOneEngTutOneImages(AssetManager assetManager) throws IOException {
         Drawable[] arr = new Drawable[5];
         for (int i = 0; i < 5; i++) {
             InputStream stream = assetManager.open("gr-1-eng-tut-2-" + (i + 1)+ "-min.png");

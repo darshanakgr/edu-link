@@ -199,7 +199,7 @@ public class LessonController {
     private static Drawable[] getGradeOneEngLesOneImages(AssetManager assetManager) throws IOException {
         Drawable[] arr = new Drawable[26];
         for (int i = 0; i < 26; i++) {
-            InputStream stream = assetManager.open("gr-1-eng-les-" + (i + 1) + "-min-min.png");
+            InputStream stream = assetManager.open("gr-1-eng-les-" + (i + 1) + "-min.png");
             arr[i] = Drawable.createFromStream(stream, null);
         }
         return arr;
@@ -213,7 +213,14 @@ public class LessonController {
         }
         return arr;
     }
-
+    private static Drawable[] getGradeOneEngLesThreeImages(AssetManager assetManager) throws IOException {
+        Drawable[] arr = new Drawable[11];
+        for (int i =0; i<11; i++){
+            InputStream stream = assetManager.open("gr-1-eng-les-3-" + (i + 1)+ "-min.png");
+            arr[i] = Drawable.createFromStream(stream,null);
+        }
+        return arr;
+    }
 
     private static Drawable[] getGradeThreeEngLesOneImages(AssetManager assetManager) throws IOException {
         Drawable[] arr = new Drawable[4];
