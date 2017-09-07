@@ -9,7 +9,7 @@ public class SubjectContentActivityController {
         switch (grade){
             case 1:
                 if(subject.equals("ENG")){
-                    return new boolean[]{true,true,false};
+                    return new boolean[]{true,true,true};
                 }else if(subject.equals("MATH")){
                     return new boolean[]{true,true,true};
                 }else{
@@ -48,7 +48,7 @@ public class SubjectContentActivityController {
         switch (grade){
             case 1:
                 if(subject.equals("ENG")){
-                    return new boolean[]{false,true,false};
+                    return new boolean[]{true,true,false};
                 }else if(subject.equals("MATH")){
                     return new boolean[]{true,true,true};
                 }else{

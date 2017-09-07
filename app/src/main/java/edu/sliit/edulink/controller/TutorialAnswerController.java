@@ -11,7 +11,23 @@ public class TutorialAnswerController {
                 if (subject.equals("ENG")) {
                     switch (tutorial) {
                         case 1:
-                            return null;
+                            return new String[][]{
+                                    {
+                                            "gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png"
+                                    },
+                                    {
+                                            "gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png"
+                                    },
+                                    {
+                                            "gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png"
+                                    },
+                                    {
+                                            "gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png"
+                                    },
+                                    {
+                                            "gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png","gr-1-eng-tut-1-1-ans-1-min.png"
+                                    }
+                            };
                         case 2:
                             return new String[][]{
                                     {
